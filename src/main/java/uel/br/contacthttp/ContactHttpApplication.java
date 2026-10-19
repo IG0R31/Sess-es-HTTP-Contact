@@ -1,28 +1,13 @@
-package uel.br.contacthttp;
+package uel.br.ContactHTTP;
 
-import java.io.*;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+@SpringBootApplication
+public class ContactHTTPApplication {
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class ContactHttpApplication extends HttpServlet {
-    private String message;
-
-    public void init() {
-        message = "Hello World!";
+    public static void main(String[] args) {
+        SpringApplication.run(ContactHTTPApplication.class, args);
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
-
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
-    }
-
-    public void destroy() {
-    }
 }

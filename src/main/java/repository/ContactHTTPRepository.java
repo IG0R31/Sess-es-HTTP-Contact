@@ -1,4 +1,7 @@
-package repository;
+package uel.br.Contact.Repository;
 
-public class ContactHTTPRepository {
+import uel.br.Contact.Model.ContactModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ContactRepository extends JpaRepository<ContactModel, Integer> {
 }
