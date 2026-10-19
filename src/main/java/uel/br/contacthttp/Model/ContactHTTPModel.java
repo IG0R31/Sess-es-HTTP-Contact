@@ -1,4 +1,4 @@
-package uel.br.ContactHTTPModel;
+package uel.br.ContactHTTP.Model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,11 +11,11 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "contatos")
 
-public class ContactModel {
+public class ContactHTTPModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String nome;
     private String email;
     private String telefone;
@@ -24,8 +24,8 @@ public class ContactModel {
     @Column(name = "dataNascimento")
     private LocalDate dataNascimento;
 
-    public int getId(){ return id; }
-    public void setId(int id){ this.id = id; }
+    public Long getId(){ return id; }
+    public void setId(Long id){ this.id = id; }
 
     public String getNome() {
         return nome;

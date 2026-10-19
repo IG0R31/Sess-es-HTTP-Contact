@@ -1,4 +1,5 @@
-package uel.br.Contact.Model;
+package uel.br.ContactHTTP.Model;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,25 +7,38 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-import java.time.LocalDate;
-
+// Obs.: a senha é armazenada em texto puro apenas para fins didáticos.
 @Entity
-@Table(name = "contatos")
-
-public class ContactModel {
+@Table(name = "usuarios")
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
+
     private String nome;
+
+    @Column(unique = true)
     private String email;
+
     private String senha;
 
-    @Column(name = "dataNascimento")
-    private LocalDate dataNascimento;
+    public Usuario() {
+    }
 
-    public int getId(){ return id; }
-    public void setId(int id){ this.id = id; }
+    public Usuario(String nome, String email, String senha) {
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;
@@ -42,12 +56,11 @@ public class ContactModel {
         this.email = email;
     }
 
-    public void getSenha(String senha){ this.senha = senha; }
+    public String getSenha() {
+        return senha;
+    }
 
-    public String setSenha(){ return senha; }
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
 }
-//String nome
-//• String telefone
-//• String email
-//• String endereco
-//• LocalDate dataNascimento (java.time, formato aaaa-MM-dd)
