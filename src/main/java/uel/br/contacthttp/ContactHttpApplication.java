@@ -1,7 +1,7 @@
-package uel.br.ContactHTTP;
+package uel.br.contacthttp;
 
-import uel.br.ContactHTTP.Model.Usuario;
-import uel.br.ContactHTTP.Repository.UsuarioRepository;
+import uel.br.contacthttp.model.Usuario;
+import uel.br.contacthttp.repository.UsuarioRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

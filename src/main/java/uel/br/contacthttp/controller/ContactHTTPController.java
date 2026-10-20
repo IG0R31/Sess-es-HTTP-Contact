@@ -1,7 +1,7 @@
-package uel.br.ContactHTTP.Controller;
+package uel.br.contacthttp.controller;
 
-import uel.br.ContactHTTP.Model.ContactHTTPModel;
-import uel.br.ContactHTTP.Service.ContactHTTPService;
+import uel.br.contacthttp.model.ContactHTTPModel;
+import uel.br.contacthttp.service.ContactHTTPService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

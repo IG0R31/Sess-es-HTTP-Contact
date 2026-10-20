@@ -1,4 +1,4 @@
-package uel.br.ContactHTTP.Model;
+package uel.br.contacthttp.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

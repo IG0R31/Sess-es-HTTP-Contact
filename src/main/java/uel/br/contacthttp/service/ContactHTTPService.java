@@ -1,7 +1,7 @@
-package uel.br.ContactHTTP.Service;
+package uel.br.contacthttp.service;
 
-import uel.br.ContactHTTP.Model.ContactHTTPModel;
-import uel.br.ContactHTTP.Repository.ContactHTTPRepository;
+import uel.br.contacthttp.model.ContactHTTPModel;
+import uel.br.contacthttp.repository.ContactHTTPRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

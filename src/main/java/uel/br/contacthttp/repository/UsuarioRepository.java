@@ -1,6 +1,6 @@
-package uel.br.ContactHTTP.Repository;
+package uel.br.contacthttp.repository;
 
-import uel.br.ContactHTTP.Model.Usuario;
+import uel.br.contacthttp.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {

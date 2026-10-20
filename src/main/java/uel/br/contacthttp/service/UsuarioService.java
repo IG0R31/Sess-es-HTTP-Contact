@@ -1,7 +1,7 @@
-package uel.br.ContactHTTP.Service;
+package uel.br.contacthttp.service;
 
-import uel.br.ContactHTTP.Model.Usuario;
-import uel.br.ContactHTTP.Repository.UsuarioRepository;
+import uel.br.contacthttp.model.Usuario;
+import uel.br.contacthttp.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 @Service
